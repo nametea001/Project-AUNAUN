@@ -80,14 +80,15 @@ char pay_bill()
             {"0252145663", "Mr.Smit GGEZ", "315 moo 7 Param2 Bangkok Thailand 10001", "150", "2", "1"},
             {"0372155687", "AUNAUN Hotel", "15 Nongyang KhamMuang Kalasin 46150", "7800", "1", "5"},
             {"0562145687", "AUNAUN Hotel", "15 Nongyang KhamMuang Kalasin 46150", "800", "2", "7"},
-            {"1512310054", "Clup House", "1515165 Nongyang KhamMuang Kalasin 46150", "1200", "1", "3"}, // add data_bill on nextline
+            {"1512310054", "Clup House", "1515165 Nongyang KhamMuang Kalasin 46150", "1200", "1", "3"},
+            {"6301013630", "Wongsatorn Panthuros", "29/1 moo4 Nongyang KhamMuang Kalasin 46150", "250", "1", "1"}, // add data_bill on nextline
         };
 
     printf("Enter Bill NO :");
     scanf("%s", &billNo);
     int check, confrim = 0;
     int i, j = 0;
-    int fchang = 5; //add databill and numberbill
+    int fchang = 6; //add databill and numberbill
     int chage1 = fchang, chage2 = fchang; 
     while (stop_loop)
     {
@@ -158,7 +159,7 @@ char pay_bill()
             printf("Type bill :Water_bill\n");
         }
 
-        printf("bill No:%s\n", billNo_list->getdata[*(pionter)][*(pionter)]);
+        printf("Bill No:%s\n", billNo_list->getdata[*(pionter)][*(pionter)]);
 
         if (billDataType == 1)
         {
