@@ -62,7 +62,8 @@ main()
             printf("\nSelece fuctiont again\n\n");
         }
     }
-    printf("\nEND");
+    printf("\nEND\n");
+    printf("------------------------------------------------------------------\n");
 }
 
 char pay_bill()
@@ -74,20 +75,23 @@ char pay_bill()
         //datatype 1.Electricity bill 2.Water bill
         //billtype if datatpe= 1 || 1.home 2.small business ...
         //billtype if datatpe= 2 || 1. Meter 1/2 inch 2.Meter 3/4 inch ...
-        *data_bill[10][6] = {
+        *data_bill[50][6] = {
             {"0425487548", "Mr.Smit GGEZ", "315 moo 7 Param2 Bangkok Thailand 10001", "150", "1", "1"},
             {"0252145663", "Mr.Smit GGEZ", "315 moo 7 Param2 Bangkok Thailand 10001", "150", "2", "1"},
             {"0372155687", "AUNAUN Hotel", "15 Nongyang KhamMuang Kalasin 46150", "7800", "1", "5"},
             {"0562145687", "AUNAUN Hotel", "15 Nongyang KhamMuang Kalasin 46150", "800", "2", "7"},
+            {"1512310054", "Clup House", "1515165 Nongyang KhamMuang Kalasin 46150", "1200", "1", "3"}, // add data_bill on nextline
         };
 
     printf("Enter Bill NO :");
     scanf("%s", &billNo);
     int check, confrim = 0;
     int i, j = 0;
+    int fchang = 5; //add databill and numberbill
+    int chage1 = fchang, chage2 = fchang; 
     while (stop_loop)
     {
-        for (i = 0; i < 4; i++)
+        for (i = 0; i < chage1; i++)
         {
             billNo_list[i].bill_data = data_bill[i][0];
 
@@ -118,9 +122,9 @@ char pay_bill()
             }
         }
 
-        if (j == 4)
+        if (j == chage2)
         {
-            printf("Bill No. error\n");
+            printf("Bill No error\n");
             confrim = 1;
             stop_loop = 0;
         }
@@ -165,7 +169,6 @@ char pay_bill()
                 break;
             case 2:
                 printf("small business\n");
-
                 break;
             case 3:
                 printf("mid-sized business\n");
