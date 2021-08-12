@@ -165,28 +165,28 @@ char pay_bill()
             switch (selece_type)
             {
             case 1:
-                printf("Home\n");
+                printf("Tpye: Home\n");
                 break;
             case 2:
-                printf("small business\n");
+                printf("Tpye: small business\n");
                 break;
             case 3:
-                printf("mid-sized business\n");
+                printf("Tpye: mid-sized business\n");
                 break;
             case 4:
-                printf("Big business\n");
+                printf("Tpye: Big business\n");
                 break;
             case 5:
-                printf("Hotel and residential business\n");
+                printf("Tpye: Hotel and residential business\n");
                 break;
             case 6:
-                printf("Non-profit organization\n");
+                printf("Tpye: Non-profit organization\n");
                 break;
             case 7:
-                printf("Water pumping business for Agriculture\n");
+                printf("Tpye: Water pumping business for Agriculture\n");
                 break;
             case 8:
-                printf("Temporary electricity\n");
+                printf("Tpye: Temporary electricity\n");
                 break;
             default:
                 break;
@@ -197,38 +197,38 @@ char pay_bill()
             switch (selece_type)
             {
             case 1:
-                printf("Meter 1/2 inch\n");
+                printf("Tpye: Meter 1/2 inch\n");
                 break;
             case 2:
-                printf("Meter 3/4 inch\n");
+                printf("Tpye: Meter 3/4 inch\n");
 
                 break;
             case 3:
-                printf("Meter 1 inch\n");
+                printf("Tpye: Meter 1 inch\n");
                 break;
             case 4:
-                printf("Meter 1 1/2 inch\n");
+                printf("Tpye: Meter 1 1/2 inch\n");
                 break;
             case 5:
-                printf("Meter 2 inch\n");
+                printf("Tpye: Meter 2 inch\n");
                 break;
             case 6:
-                printf("Meter 3 inch\n");
+                printf("Tpye: Meter 3 inch\n");
                 break;
             case 7:
-                printf("Meter 4 inch\n");
+                printf("Tpye: Meter 4 inch\n");
                 break;
             case 8:
-                printf("Meter 6 inch\n");
+                printf("Tpye: Meter 6 inch\n");
                 break;
             case 9:
-                printf("Meter 8 inch\n");
+                printf("Tpye: Meter 8 inch\n");
                 break;
             case 10:
-                printf("Meter 12 inch\n");
+                printf("Tpye: Meter 12 inch\n");
                 break;
             case 11:
-                printf("11. Meter 16 inch\n");
+                printf("Tpye: Meter 16 inch\n");
                 break;
 
             default:
@@ -239,7 +239,7 @@ char pay_bill()
         printf("Name :%s\n", billNo_list->getdata[*(pionter)][*(pionter + 1)]);
         printf("Address :%s\n", billNo_list->getdata[*(pionter)][*(pionter + 2)]);
 
-        printf("Unit use :%.0f unit\n", unit);
+        printf("Unit :%.0f unit\n", unit);
 
         if (billDataType == 1)
         {
