@@ -89,7 +89,7 @@ char pay_bill()
     int check, confrim = 0;
     int i, j = 0;
     int fchang = 6; //add databill and numberbill
-    int chage1 = fchang, chage2 = fchang; 
+    int chage1 = fchang, chage2 = fchang;
     while (stop_loop)
     {
         for (i = 0; i < chage1; i++)
@@ -154,7 +154,7 @@ char pay_bill()
         {
             printf("Type bill :Electricity bill\n");
         }
-        else
+        else if (billDataType == 2)
         {
             printf("Type bill :Water_bill\n");
         }
@@ -193,7 +193,7 @@ char pay_bill()
                 break;
             }
         }
-        else
+        else if (billDataType == 2)
         {
             switch (selece_type)
             {
